@@ -1,0 +1,290 @@
+.navbar{
+  background-color: var(--black);
+  position: sticky;
+  top: 0; 
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navbar li a,
+.navbar li a:visited {
+  font-size: 12px;
+  line-height: 40px;
+  color: var(--menu-text);
+  padding: 0px 21px;
+  font-weight: 300;
+}
+
+.shop-now{
+  background-color: var(--red);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--menu-text);
+  padding: 12px 0px; 
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px
+}
+.shop-now a {
+  color: var(--menu-text);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px
+}
+.shop-now a:hover{
+  border-bottom: 1px solid var(--menu-text);
+}
+.page{
+  height: 80vh;
+  width: 100vw;
+}
+.page .section1 {
+  background-color: #fbedf9;
+  padding-top: 35px;
+  text-align: center;
+  height: 100%;
+}
+
+.header img{
+  /* background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center; */
+  height: 90px;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+.header h1{
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.image-wrapper{
+  margin-top: 45px;
+}
+.image-wrapper img {
+  width: 370px;
+}
+.section2{
+  background-image: url("/img/hero_iphone_13pro__dhnsegysa42u_mediumtall_2x.jpeg");
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+}
+.page .section2 {
+  margin-top: 10px;
+  padding-top: 35px;
+  background-color: var(--white);
+  /* max-height: 120vh;
+  min-height: 70vh; */
+  background-position: center;
+  background-size: 80%;
+  padding-top: 35px;
+  text-align: center;
+  height: 100%;
+}
+
+.section2 .header h1{
+  margin: 0px;
+}
+.section2 .header .link{
+  margin: 20px;
+  top: 20px;
+}
+.section2 h2 {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 0px;
+
+}
+.page .section3{
+  background-image: url("/img/hero_iphone_13__f194u1rdooeq_mediumtall_2x.jpeg");
+  margin-top: 10px;
+  padding-top: 35px;
+  background-color: var(--white);
+  /* max-height: 120vh;
+  min-height: 70vh; */
+  background-position: center;
+  background-size: 100%;
+  padding-top: 35px;
+  text-align: center;
+  height: 100%;
+  /* background-color: rgb(29, 19, 36); */
+}
+
+.section3 .header{
+  color: #f5f5f7;
+}
+.section3 h1 {
+  color: #f5f5f7;
+}
+
+.section3 h2 {
+  color: #fcc1ea;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.section3 a,
+.section3 a:visited {
+  color: #2a91f5;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(3,500px);
+  gap: 10px;
+  margin: 10px;
+  grid-template-areas:
+  'macbook watch'
+  'homepod arcade'
+  'card tv'
+  ;
+}
+.macbook{
+  grid-area: macbook;
+  background-image: url("/img/tile_macbookpro__cx0ur0qg9biq_medium_2x (1).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 35px;
+  text-align: center;
+  height: 100%;
+}
+.watch{
+  grid-area: watch;
+  background-image: url("/img/tile_watch__e9n11b6m6yq2_medium_2x (1).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 35px;
+  text-align: center;
+  height: 100%;
+}
+.arcade{
+  grid-area: arcade;
+  background-image: url("/img/tile_lego_castaways__d2v36ez91ewm_small_2x.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 35px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.homepod{
+  grid-area: homepod;
+  background-image: url("/img/tile_homepod_mini__b73w4z3ljymu_medium_2x (1).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 35px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.card{
+  grid-area: card;
+  background-image: url("/img/tile__cauwwcyyn9hy_medium_2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 35px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.tv{
+  grid-area: tv;
+  background-image: url("/img/promo_dickinson__c9ea4l2f5rki_medium_2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 35px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.logo-dickinson{
+  margin-top: 100px;
+  /* height: 20px; */
+}
+footer{
+  background-color: #F5F5F7;
+  color: var(--grey-text);
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+
+}
+.page5{
+  margin-top: 20px;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 350px;
+  padding-right: 350px;
+
+}
+.line{
+  border-bottom: 1px solid var(--grey-text);
+}
+.web-links{
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  justify-content: space-between;
+}
+.web-links .col5{
+  justify-content: space-between;
+
+}
+.copyright-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-nav text ul li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.col5{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 2em;
+}
+.col1 a,.col2 a,.col3 a,.col4 a,.col5 a, .bottom-nav a{
+  color: var(--grey-text);
+  text-align: center;
+  justify-content: space-between;
+
+}
+.col1 a:hover:hover,.col2 a:hover,.col3 v:hover,.col4 a:hover,.col5 a:hover, .bottom-nav a:hover{
+  border-bottom: 0.5px solid var(--black-end-text);
+}
+.head-col{
+  color: var(--black-end-text);
+  /* text-align: center; */
+  /* padding-left: 35px; */
+}
+.bottom-nav  ul{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.bottom-nav  a{
+  margin: 20px;
+  padding-right: 10px;
+  border-right: 0.5px solid var(--grey-text);
+}

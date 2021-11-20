@@ -1,0 +1,72 @@
+:root {
+  --black: #333333;
+  --blue: #0066cc;
+  --red: #e34140;
+  --light-gray: #eeeffe;
+  --white: #fbfbfd;
+  --menu-text: #d6d6d6;
+  --black-text: #1d1d1f;
+  --grey-text: #6e6e73;
+  --black-end-text: #1d1d1f
+}
+
+@font-face {
+  font-family: SF-Pro-Text;
+  src: url("/SF-Pro.dmg");
+}
+
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "SF-Pro-Text", Helvetica, sans-serif;
+  letter-spacing: 0.05rem;
+  scroll-behavior: smooth;  font-weight: 400;
+  /* font-size: 12px;
+  line-height:44px; */
+  /* color: #f5f5f7; */
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 56px;
+  margin: 10px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  line-height: 55px;
+}
+  
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+
+a.link , a.link:visited {
+  font-size: 20px;
+  color: var(--blue) ;
+  letter-spacing: 0.05rem;
+  display: inline;
+  width: fit-content;
+  white-space: nowrap;
+  margin: 20px;
+}
+a.link:hover, a.link2:hover{
+  border-bottom: 1px solid var(--blue);
+}
+a.link2{
+  font-size: 12px;
+  color: var(--blue) ;
+  display: inline;
+  width: fit-content;
+}
