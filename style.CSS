@@ -20,7 +20,6 @@
 .shop-now{
   background-color: var(--red);
   display: flex;
-  flex-direction: row;
   justify-content: center;
   color: var(--menu-text);
   padding: 12px 0px; 
@@ -39,7 +38,6 @@
 }
 .page{
   height: 80vh;
-  width: 100vw;
 }
 .page .section1 {
   background-color: #fbedf9;
@@ -47,31 +45,25 @@
   text-align: center;
   height: 100%;
 }
-
-.header img{
-  /* background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center; */
-  height: 90px;
+.header{
+  display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-
 }
 
-.header h1{
-  margin: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.header img{
+  height: 70px;
 }
 
 .image-wrapper{
-  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+
 }
 .image-wrapper img {
-  width: 370px;
+  width: 350px;
 }
 .section2{
   background-image: url("/img/hero_iphone_13pro__dhnsegysa42u_mediumtall_2x.jpeg");
@@ -81,41 +73,37 @@
 }
 .page .section2 {
   margin-top: 10px;
-  padding-top: 35px;
   background-color: var(--white);
-  /* max-height: 120vh;
-  min-height: 70vh; */
   background-position: center;
   background-size: 80%;
-  padding-top: 35px;
   text-align: center;
   height: 100%;
 }
+.section2 .header{
+  height: 20%;
+  justify-content:space-between;
+}
 
-.section2 .header h1{
-  margin: 0px;
-}
-.section2 .header .link{
-  margin: 20px;
-  top: 20px;
-}
 .section2 h2 {
   font-weight: 400;
   font-size: 26px;
-  margin-bottom: 0px;
-
 }
+.header .link{
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
 .page .section3{
   background-image: url("/img/hero_iphone_13__f194u1rdooeq_mediumtall_2x.jpeg");
   margin-top: 10px;
-  padding-top: 35px;
+  /* padding-top: 35px; */
   background-color: var(--white);
   /* max-height: 120vh;
   min-height: 70vh; */
   background-position: center;
   background-size: 100%;
-  padding-top: 35px;
-  text-align: center;
+  /* padding-top: 35px; */
+  /* text-align: center; */
   height: 100%;
   /* background-color: rgb(29, 19, 36); */
 }
@@ -222,15 +210,18 @@ footer{
   color: var(--grey-text);
   font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
-
+  margin-top: 50px;
+  
 }
 .page5{
-  margin-top: 20px;
+  margin: auto;
+  max-width: 1000px;
+  /* margin-top: 20px;
   padding-top: 30px;
   align-items: center;
   justify-content: center;
   padding-left: 350px;
-  padding-right: 350px;
+  padding-right: 350px; */
 
 }
 .line{
@@ -241,6 +232,12 @@ footer{
   text-align: left;
   justify-content: center;
   justify-content: space-between;
+}
+.web-links li{
+  padding-bottom: 10px;
+}
+.web-links ul{
+  padding: 0px;
 }
 .web-links .col5{
   justify-content: space-between;
@@ -284,7 +281,7 @@ footer{
   margin: 20px;
 }
 .bottom-nav  a{
-  margin: 20px;
+  margin: 0px 2px 0px 4px;
   padding-right: 10px;
   border-right: 0.5px solid var(--grey-text);
 }
